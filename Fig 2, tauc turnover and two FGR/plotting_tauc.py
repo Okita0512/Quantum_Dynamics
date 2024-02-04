@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.special import voigt_profile
@@ -267,20 +269,20 @@ data = np.zeros((len(tauc_data2), 2), dtype = float)
 data[:, 0] = tauc_data2
 data[:, 1] = resonance_date
 
-plt.semilogx(data[:, 0], data[:, 1] / k0_HEOM, 'o', markersize = 10, markerfacecolor = 'white', color = 'navy', label = "HEOM")
-plt.semilogx(tauc_data1, rate_L, "-", linewidth = lw, color = 'goldenrod', label = r"$k_\mathrm{VSC}$")
-plt.semilogx(tauc_data1, rate_R, "-", linewidth = lw, color = 'darkgoldenrod', label = r"$\tilde{k}_\mathrm{VSC}$")
+plt.semilogx(data[:, 0], data[:, 1] / k0_HEOM, 'o', markersize = 15, markerfacecolor = 'white', color = 'navy', label = "HEOM")
+plt.semilogx(tauc_data1, rate_L, "-", linewidth = lw, color = 'red', label = r"$k_\mathrm{VSC}$")
+plt.semilogx(tauc_data1, rate_R, "-", linewidth = lw, color = 'blue', label = r"$\tilde{k}_\mathrm{VSC}$")
 plt.semilogx(tauc_data1, rate_C, "--", linewidth = lw, color = 'gold', label = r"$k^\mathrm{int}_\mathrm{VSC}$")
 
 # plot lossy and lossless marks
 k_min = 1.0
 k_max = 1.0
 tau_0 = np.linspace(5 * 1e-1, 30, 10000)
-plt.plot(tau_0, [k_min] * len(tau_0), '--', linewidth = lw, color = 'black')
+plt.plot(tau_0, [k_min] * len(tau_0), '--', linewidth = lw, color = 'red')
 tau_1 = np.linspace(1e3, 1e5, 10000)
-plt.plot(tau_1, [k_max] * len(tau_1), '--', linewidth = lw, color = 'red')
-plt.text(1.2, 0.965, r'lossy limit', color = 'black', size = 24)
-plt.text(1000, 0.965, r'lossless limit', color = 'red', size = 24)
+plt.plot(tau_1, [k_max] * len(tau_1), '--', linewidth = lw, color = 'blue')
+plt.text(1.2, 0.965, r'lossy limit', color = 'red', size = 24)
+plt.text(1000, 0.965, r'lossless limit', color = 'blue', size = 24)
 
 ax = plt.gca()
 ax.yaxis.set_major_locator(y_major_locator)
