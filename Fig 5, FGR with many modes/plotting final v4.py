@@ -104,7 +104,7 @@ x1, x2 = 600, 1740
 w_scan = np.linspace(x1 * cm_to_au, x2 * cm_to_au, 1000)    # scan the wc value
 
 # Ngrids = int(4e5)      # for converged calculation
-Ngrids = int(1e4)       # for quick run, basically converged
+Ngrids = int(4e4)       # for quick run, basically converged (which only takes a few minutes)
 
 tau_0 = 3.33e0 * fs_to_au       # tau_parallel
 Gamma_perpendicular = 1.0 / tau_c
@@ -198,7 +198,7 @@ for z in w_scan:
 plt.plot(w_scan / cm_to_au, rate_3, '-', linewidth = lw, color = 'red', label = r'$25.09~\mathrm{cm}^{-1}$')
 
 # plt.plot(w_scan / cm_to_au, [1.0] * len(w_scan), linewidth = lw, color = 'black', label = r"outside cavity")
-plt.text(750, 1.14, r'$\times$0.5', color = 'goldenrod', size = 24)
+# plt.text(750, 1.14, r'$\times$0.5', color = 'goldenrod', size = 24)
 plt.text(1360, 1.2, r'$\omega_\mathrm{0}$', color = 'black', size = 20)
 plt.text(1270, 1.17, r'$1172\ \mathrm{cm}^{-1}$', color = 'black', size = 20)
 
@@ -264,7 +264,7 @@ Nsteps = int(wmax / (c_to_au * dk))
 factor_2 = 2 * np.pi / (c_to_au * dk)**2
 
 print("delta w =", c_to_au * dk / cm_to_au, "cm^-1")
-print(Nsteps, "modes per DOF")
+print(Nsteps, "modes per dimension")
 
 wv = np.linspace(0, wmax, Nsteps)
 
@@ -441,7 +441,7 @@ plt.plot(w_scan / cm_to_au, spd, 'o', markersize = 10, markerfacecolor = 'white'
 
 # =================
 
-plt.text(750, 12, r'$\times$0.5', color = 'goldenrod', size = 24)
+# plt.text(750, 12, r'$\times$0.5', color = 'goldenrod', size = 24)
 plt.text(1360, 15, r'$\omega_\mathrm{0}$', color = 'black', size = 20)
 plt.text(1270, 13, r'$1172\ \mathrm{cm}^{-1}$', color = 'black', size = 20)
 
@@ -497,4 +497,4 @@ plt.legend(title = '(b)', frameon = False, title_fontsize = legendsize)
 
 
 
-plt.savefig("Fig_FGR_rates_many_modes.pdf", bbox_inches='tight')
+plt.savefig("figure_rate_2_Lorentzian.pdf", bbox_inches='tight')
