@@ -234,7 +234,7 @@ plt.ylim(y1, y2)
 ax.set_xlabel(r'$\omega_\mathrm{c}~ (\mathrm{cm}^{-1})$', size = txtsize)
 ax.set_ylabel(r'$k / k_0$', size = txtsize)
 ax.legend(frameon = False, loc = 'upper left', prop = font_legend, markerscale = 1)
-plt.text(750, 1.21, r'$\times$ %s' %cfactor, color = 'black', size = 24)
+# plt.text(750, 1.21, r'$\times$ %s' %cfactor, color = 'black', size = 24)
 plt.text(1300, 1.3, r'$\tau_\mathrm{c} \ll \Omega_\mathrm{R}^{-1}$', color = 'black', size = 32)
 plt.legend(title = '(a) ', frameon = False, title_fontsize = legendsize)
 
@@ -313,7 +313,7 @@ plt.ylim(y1, y2)
 
 ax.set_xlabel(r'$\tau_\mathrm{c}~ (\mathrm{fs})$', size = txtsize)
 ax.legend(frameon = False, loc = 'upper left', prop = font_legend, markerscale = 1)
-plt.text(1.5, 1.23, r'$\times$ %s' %cfactor, color = 'black', size = 24)
+# plt.text(1.5, 1.23, r'$\times$ %s' %cfactor, color = 'black', size = 24)
 plt.legend(title = '(b) ', loc = 'upper right', frameon = False, title_fontsize = legendsize)
 
 # ==============================================================================================
@@ -447,7 +447,7 @@ plt.ylim(y1, y2)
 ax.set_xlabel(r'$\omega_\mathrm{c}~ (\mathrm{cm}^{-1})$', size = txtsize)
 # ax.set_ylabel(r'$k / k_0$', size = txtsize)
 ax.legend(frameon = False, loc = 'upper left', prop = font_legend, markerscale = 1)
-plt.text(750, 1.21, r'$\times$ %s' %cfactor, color = 'black', size = 24)
+# plt.text(750, 1.21, r'$\times$ %s' %cfactor, color = 'black', size = 24)
 plt.text(1300, 1.3, r'$\tau_\mathrm{c} \gg \Omega_\mathrm{R}^{-1}$', color = 'black', size = 32)
 plt.legend(title = '(c) ', frameon = False, title_fontsize = legendsize)
 
