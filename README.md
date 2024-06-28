@@ -12,3 +12,7 @@ where you can find detailed instructions on compiling and running.
 ======================
 
 Update on 05/02/2024: Some figures are updated according to the review comments. Note that the original file of the density matrix for plotting Fig. S2 is too big to be uploaded. Please contact me via wying3@ur.rochester.edu if needed. 
+
+======================
+
+Update on 06/28/2024: Glad that the paper has been accepted by Communications Materials, see https://www.nature.com/articles/s43246-024-00551-y
