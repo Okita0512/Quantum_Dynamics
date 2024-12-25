@@ -19,5 +19,5 @@ Update on 06/28/2024: Glad that the paper has been accepted by Communications Ma
 
 ======================
 
-updated on 12/24/2024: uploaded the shortened RDM file "prop-rho2.dat" to Fig S2 so that it does not exceed the size limit. 
+updated on 12/24/2024: uploaded the shortened RDM file "prop-rho2.dat" to Fig S2 so that it does not exceed the size limit. The corresponding plotting script needs to be modified to read the correct data file.
 
