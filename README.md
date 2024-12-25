@@ -16,3 +16,8 @@ Update on 05/02/2024: Some figures are updated according to the review comments.
 ======================
 
 Update on 06/28/2024: Glad that the paper has been accepted by Communications Materials, see https://www.nature.com/articles/s43246-024-00551-y
+
+======================
+
+updated on 12/24/2024: uploaded the shortened RDM file "prop-rho2.dat" to FigS2 so that it does not exceed the size limit. 
+
