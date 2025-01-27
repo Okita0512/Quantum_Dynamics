@@ -19,5 +19,9 @@ Update on 06/28/2024: Glad that the paper has been accepted by Communications Ma
 
 ======================
 
-updated on 12/24/2024: uploaded the shortened RDM file "prop-rho2.dat" to Fig S2 so that it does not exceed the size limit. The corresponding plotting script needs to be modified to read the correct data file.
+updated on 12/24/2024: uploaded the shortened RDM file "prop-rho2.dat" to Fig S2 so that it does not exceed the size limit. The corresponding plotting script needs to be modified to read the correct data file. Also, the source code and data for the normal incidence effect is added, see the "Normal Incidence" file.
+
+======================
+
+Updated on 01/26/2025: uploaded some results with Lindbladian description of the cavity loss, see the "Lindbladian Loss" file. 
 
