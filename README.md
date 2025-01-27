@@ -23,5 +23,5 @@ updated on 12/24/2024: uploaded the shortened RDM file "prop-rho2.dat" to Fig S2
 
 ======================
 
-Updated on 01/26/2025: uploaded some results with Lindbladian description of the cavity loss, see the "Lindbladian Loss" file. 
+Updated on 01/26/2025: uploaded some results with Lindbladian description of the cavity loss, see the "Lindblad Loss" file. 
 
